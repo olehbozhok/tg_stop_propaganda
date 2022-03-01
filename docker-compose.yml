@@ -21,14 +21,3 @@ services:
     restart: always
     ports:
       - 8080:8080
-
-  tg_stop_propaganda:
-    build: .
-    restart: always
-    environment:
-      DB_USER: super_admin
-      DB_PASS: super_admin_password
-      DB_HOST: localhost
-      DB_DBNAME: main_db
-      TG_TOKEN: 5021755094:AAEdA8oon28Oi0R8qlRV6LY6Twjgmdi8l88
-      TG_ADMIN: OlehBozhok
