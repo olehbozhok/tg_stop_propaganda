@@ -81,7 +81,7 @@ func main() {
 
 		switch msgUpdate.CommandWithAt() {
 		case "start":
-			msg := tgbotapi.NewMessage(msgUpdate.Chat.ID, `Вітаю в чатботі по бородьбі с ТікТок пропаганду. Відправляй сюди посилання на кожне відео з пропагандою та фейковую інформацією, ми будемо їх блокувати`)
+			msg := tgbotapi.NewMessage(msgUpdate.Chat.ID, `Вітаю в чатботі по боротьбі с ТікТок пропаганду. Відправляй сюди посилання на кожне відео з пропагандою та фейковою інформацією, ми будемо їх блокувати`)
 			go bot.Send(msg)
 			return
 		case "download":
